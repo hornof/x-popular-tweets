@@ -23,3 +23,5 @@ def search_tweets(query, max_results=20):
 
 # Example usage
 search_tweets("Python programming", max_results=5)
+
+# Test
