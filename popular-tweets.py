@@ -33,7 +33,7 @@ def check_rate_limit():
     }
     params = {
         "query": "test",  # Dummy query to make the request valid
-        "max_results": 1  # Minimal results to avoid hitting the rate limit
+        "max_results": 10  # Minimal valid results to avoid hitting the rate limit
     }
     response = requests.get(url, headers=headers, params=params)
     if response.status_code == 200:
